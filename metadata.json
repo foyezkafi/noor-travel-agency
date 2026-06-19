@@ -1,0 +1,6 @@
+{
+  "name": "Noor Travel BD",
+  "description": "Trusted Haj, Umrah, and international travel partner from Bangladesh. Premium packages, visa assistance, and real-time bookings.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
