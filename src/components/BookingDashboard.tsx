@@ -227,7 +227,7 @@ export default function BookingDashboard({ bookings, onUpdateStatus, onDeleteBoo
 
                         {/* Package Info */}
                         <td className="py-4 px-4">
-                          <span className="font-semibold text-gray-700 block max-w-[200px] truncate">{b.packageName}</span>
+                          <span className="font-semibold text-gray-700 block max-w-50 truncate">{b.packageName}</span>
                           <span className="text-[10px] text-brand-darkgold font-bold block mt-0.5">
                             ✈️ Depart: {b.travelDate}
                           </span>
@@ -249,7 +249,7 @@ export default function BookingDashboard({ bookings, onUpdateStatus, onDeleteBoo
                               onChange={(e) => onUpdateStatus(b.id, e.target.value as any, b.notes)}
                               className={`px-3 py-1.5 rounded-lg text-[10px] font-extrabold uppercase border-b-2 font-mono ${
                                 b.status === 'Approved'
-                                  ? 'bg-[#E1F0E5] text-brand-green border-[#0F5132]/50'
+                                  ? 'bg-brand-lightgreen text-brand-green border-brand-green/50'
                                   : b.status === 'Pending'
                                   ? 'bg-amber-100 text-amber-700 border-amber-500/50'
                                   : 'bg-red-50 text-red-700 border-red-500/50'
@@ -263,7 +263,7 @@ export default function BookingDashboard({ bookings, onUpdateStatus, onDeleteBoo
                           
                           {/* Display Notes if present */}
                           {b.notes && (
-                            <p className="mt-1.5 p-1 bg-gray-50 rounded border border-gray-100 text-[10px] text-gray-500 leading-normal max-w-[200px] truncate" title={b.notes}>
+                            <p className="mt-1.5 p-1 bg-gray-50 rounded border border-gray-100 text-[10px] text-gray-500 leading-normal max-w-50 truncate" title={b.notes}>
                               📝 Note: {b.notes}
                             </p>
                           )}

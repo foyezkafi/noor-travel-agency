@@ -9,18 +9,18 @@ interface HeroProps {
 export default function Hero({ onOpenBookingModal, onNavigateToPackages }: HeroProps) {
   // Carousel Slider Images and Captions
   const slides = [
-    {
-      image: 'https://images.unsplash.com/photo-1591604021695-0c69b7c05981?auto=format&fit=crop&q=80&w=1600',
-      tag: 'HOLY MAKKAH',
-      title: 'Haj & Umrah Trusted Partner',
-      subtitle: 'Perform your sacred rituals with utmost peacefulness and full dignity from Bangladesh.',
-    },
-    {
-      image: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&q=80&w=1600',
-      tag: 'BELOVED MADINA',
-      title: 'Offer Salam at the Prophet’s Mosque',
-      subtitle: 'Stay in certified 5★ hotels merely steps from the gates of Masjid al-Nabawi.',
-    },
+    // {
+    //   image: 'https://images.unsplash.com/photo-1591604021695-0c69b7c05981?auto=format&fit=crop&q=80&w=1600',
+    //   tag: 'HOLY MAKKAH',
+    //   title: 'Haj & Umrah Trusted Partner',
+    //   subtitle: 'Perform your sacred rituals with utmost peacefulness and full dignity from Bangladesh.',
+    // },
+    // {
+    //   image: 'https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&q=80&w=1600',
+    //   tag: 'BELOVED MADINA',
+    //   title: 'Offer Salam at the Prophet’s Mosque',
+    //   subtitle: 'Stay in certified 5★ hotels merely steps from the gates of Masjid al-Nabawi.',
+    // },
     {
       image: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&q=80&w=1600',
       tag: 'BIMAN BANGLADESH AIRLINES',
@@ -164,7 +164,7 @@ export default function Hero({ onOpenBookingModal, onNavigateToPackages }: HeroP
       </div>
 
       {/* Slide Navigation Indicators */}
-      <div className="absolute bottom-32 sm:bottom-28 left-0 right-0 flex justify-center gap-2 z-10">
+      {/* <div className="absolute bottom-32 sm:bottom-28 left-0 right-0 flex justify-center gap-2 z-10">
         {slides.map((_, idx) => (
           <button
             key={idx}
@@ -175,68 +175,10 @@ export default function Hero({ onOpenBookingModal, onNavigateToPackages }: HeroP
             aria-label={`Go to slide ${idx + 1}`}
           />
         ))}
-      </div>
+      </div> */}
 
       {/* HAJJ 1448H COUNTDOWN TICKER BOX */}
-      <div className="absolute bottom-0 left-0 right-0 z-20 bg-brand-green/90 border-t border-brand-gold/30 backdrop-blur-md text-white py-3 sm:py-4 px-4 select-none">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3 sm:gap-4">
-          
-          <div className="flex items-center gap-3">
-            <div className="p-2.5 rounded-lg bg-brand-gold/25 border border-brand-gold/30 text-brand-gold">
-              <Calendar size={22} className="animate-pulse" />
-            </div>
-            <div>
-              <p className="text-[11px] sm:text-xs text-brand-gold font-bold tracking-widest uppercase">COUNTDOWN TO HAJJ 1448H</p>
-              <h4 className="font-semibold text-sm sm:text-base">Pre-Registration Open (May 2027 Season)</h4>
-            </div>
-          </div>
-
-          {/* Real time timer ticker boxes */}
-          <div className="flex items-center gap-2 sm:gap-3 text-center">
-            
-            <div className="flex flex-col">
-              <span className="bg-black/40 border border-white/10 text-brand-gold font-mono text-base sm:text-xl font-bold rounded-lg px-2 py-1 min-w-[44px]">
-                {timeLeft.days.toString().padStart(2, '0')}
-              </span>
-              <span className="text-[9px] uppercase tracking-wider text-white/70 mt-1 font-medium">Days</span>
-            </div>
-            
-            <span className="text-brand-gold text-lg font-bold -mt-4">:</span>
-
-            <div className="flex flex-col">
-              <span className="bg-black/40 border border-white/10 text-brand-gold font-mono text-base sm:text-xl font-bold rounded-lg px-2 py-1 min-w-[44px]">
-                {timeLeft.hours.toString().padStart(2, '0')}
-              </span>
-              <span className="text-[9px] uppercase tracking-wider text-white/70 mt-1 font-medium">Hrs</span>
-            </div>
-
-            <span className="text-brand-gold text-lg font-bold -mt-4">:</span>
-
-            <div className="flex flex-col">
-              <span className="bg-black/40 border border-white/10 text-brand-gold font-mono text-base sm:text-xl font-bold rounded-lg px-2 py-1 min-w-[44px]">
-                {timeLeft.minutes.toString().padStart(2, '0')}
-              </span>
-              <span className="text-[9px] uppercase tracking-wider text-white/70 mt-1 font-medium font-bold">Mins</span>
-            </div>
-
-            <span className="text-brand-gold text-lg font-bold -mt-4">:</span>
-
-            <div className="flex flex-col">
-              <span className="bg-black/40 border border-white/10 text-brand-gold font-mono text-base sm:text-xl font-bold rounded-lg px-2 py-1 min-w-[44px]">
-                {timeLeft.seconds.toString().padStart(2, '0')}
-              </span>
-              <span className="text-[9px] uppercase tracking-wider text-white/70 mt-1 font-medium">Secs</span>
-            </div>
-            
-          </div>
-
-          <div className="hidden lg:block text-right">
-            <span className="text-[10px] text-white/60 block uppercase font-medium">Ministry Guidelines</span>
-            <span className="text-xs text-brand-gold font-semibold">NID Card & Passport Required</span>
-          </div>
-
-        </div>
-      </div>
+  
       
     </div>
   );

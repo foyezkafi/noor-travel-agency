@@ -163,7 +163,7 @@ export default function PackagesSection({ onViewDetails, onBookNow, preselectedT
                   key={pkg.id}
                   className={`bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between border-2 group ${
                     isVIP 
-                      ? 'border-brand-gold scale-[1.01] bg-gradient-to-b from-[#FEFBEC]/30 to-white' 
+                      ? 'border-brand-gold scale-[1.01] bg-linear-to-b from-brand-lightgold/30 to-white' 
                       : isHaj
                       ? 'border-brand-gold/20'
                       : 'border-transparent'
@@ -179,7 +179,7 @@ export default function PackagesSection({ onViewDetails, onBookNow, preselectedT
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       referrerPolicy="no-referrer"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                    <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent"></div>
                     
                     {/* Ribbon badges */}
                     <div className="absolute top-4 left-4 flex flex-col gap-1.5 items-start">
