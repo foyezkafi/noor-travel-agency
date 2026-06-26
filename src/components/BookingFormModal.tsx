@@ -335,7 +335,7 @@ export default function BookingFormModal({ isOpen, onClose, selectedPackageId, o
               </button>
 
               <p className="text-[10px] text-gray-400 text-center leading-relaxed font-semibold">
-                🔒 Data encrypted securely under government approved privacgjgfjy policy. No advance payments required.
+                🔒 Data encrypted securely under government approved privacgjgfjy policy. No advance payments required. dsfbkjgdsnbgkjfdsgn
               </p>
 
             </form>
